@@ -6,7 +6,7 @@
     <title>HEHEHE</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     $(document).ready(function(){
-      $('.yesBtn').click(()=>{
+      $('#yesBtn').on( "click", function() {
          console.log('Yes');
        
        });
@@ -26,8 +26,8 @@
     <center>
        <h1 class="indexTxt">
          Will you be my valentiMees?
-         <button class="yesBtn" name="subject" type="submit" value="HTML">YES</button>
-         <button name="noBtn" type="submit" value="CSS">NO</button>
+         <button id="yesBtn" type="submit" value="HTML">YES</button>
+         <button id="noBtn" type="submit" value="CSS">NO</button>
        </h1>
     </center>
   </body>
